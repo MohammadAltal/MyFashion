@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Hover Effect Ideas: Inspiration for subtle hover effects" />
+<meta name="keywords" content="hover effect, inspiration, grid, thumbnail, transition, subtle, web design" />
+<meta name="author" content="Codrops" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+
+<title>MyFashion Company | Welcome</title>
+
+<!--CSS files-->
+  <link rel="stylesheet" href="css/css.css" media="all">
+<!--End CSS-->
+
+
+<!--Jquery-->
+        <script src="js/jquery-1.11.3.min.js"></script>
+<!--End Jquery-->
+
+
+<!--Bootstrap-->
+  <link rel="stylesheet" href="css/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+  <script src="css/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  <script src="js/JsBootstrab.js"></script>
+<!--End Bootstrap-->
+
+<!--Style products-->
+		<link rel="shortcut icon" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/set1.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<!--End Style products-->
+
+
+<style type="text/css">
+ @font-face{
+	  src:url(font/SWENSON.TTF);
+	  font-family:"SWENSON";}
+	  
+.slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;	
+      animation-duration: 2s;	
+      -webkit-animation-duration: 2s;
+      visibility: visible;			
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }	
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  }
+</style>
+
+</head>
+
+<body>
+
+<!--Header-->
+<nav class="navbar navbar-default  navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" style="font-size:24px;" href="#">MyFashion</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#who">WHO</a></li>
+        <li><a href="#product">Products</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--End Header-->
+
+
+<!--Who Section-->
+<div class="container-fluid text-center who-Section" id="who">
+    <p>MyFashion Company <br> For Clothing</p>
+</div>
+<!--End Who Section-->
+
+<!--Products Section-->
+<div class="container-fluid product-section" id="product">
+
+ <h2 class="text-center" style="padding-top:35px; letter-spacing:5px;">Products</h2>
+
+				<div class="grid slideanim">
+					<figure class="effect-lily">
+						<img src="img/img (3).jpg" alt="img12"/>
+						<figcaption>
+							<div>
+								<h2>My <span>Fashion</span></h2>
+								<p>Modern designs for young people of all ages</p>
+							</div>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+					<figure class="effect-lily">
+						<img src="img/img (1).jpg" alt="img1"/>
+						<figcaption>
+							<div>
+								<h2>My <span>Fashion</span></h2>
+								<p>A wide variety of clothing</p>
+							</div>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+                    
+                    <figure class="effect-lily">
+						<img src="img/img (4).jpg" alt="img12"/>
+						<figcaption>
+							<div>
+								<h2>My <span>Fashion</span></h2>
+								<p >Syrian largest companies for the clothing industry</p>
+							</div>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+                    
+                    <figure class="effect-lily">
+						<img src="img/img (2).jpg" alt="img12"/>
+						<figcaption>
+							<div>
+								<h2>My <span>Fashion</span></h2>
+								<p>Finest European fabric</p>
+							</div>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+				</div>
+</div>
+<!--End Products Section-->
+
+
+
+<!--Contact Us Section-->
+<div id="contact" class="container-fluid contact">
+  <h2 class="text-center slideanim">CONTACT</h2>
+  <div class="row slideanim">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Damascus , Syria</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +963 000000000</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>	   
+    </div>
+    <div class="col-sm-7 ">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="message" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>	
+    </div>
+  </div>
+</div>
+
+<!--End Contact Us Section-->
+
+
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center" >
+<p>Myfashion-sy.com | All rights reserved &copy; 2016 | Developed By <a href="https://www.facebook.com/Eng.HamodaAltal" target="_blank">Hamoda Altal</a></p> 
+
+<!-- End Footer -->
+
+</footer>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 1000, function(){
+   
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+</body>
+</html>
